@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>东隅穿衣 · v1.2 前端测试</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f3efe7; color: #201a2d; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 48px 24px 72px; }
+    .eyebrow { color: #7a6d85; font-size: 12px; letter-spacing: .18em; font-weight: 700; }
+    h1 { margin: 10px 0 12px; font-size: clamp(32px, 5vw, 52px); line-height: 1.05; letter-spacing: -.04em; }
+    .lede { max-width: 760px; margin: 0 0 20px; color: #675d70; font-size: 15px; line-height: 1.8; }
+    .notice { margin: 0 0 14px; padding: 14px 18px; border: 1px solid #d8cfc2; border-radius: 16px; background: #fffaf1; color: #594e44; font-size: 13px; line-height: 1.8; }
+    .notice--warn { border-color: #e6c9a8; background: #fdf3e3; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 26px; }
+    .card { position: relative; display: flex; flex-direction: column; min-height: 170px; padding: 20px; border-radius: 22px; background: #fff; color: inherit; text-decoration: none; border: 1px solid #e1d8cb; box-shadow: 0 12px 28px rgb(60 40 20 / 7%); transition: transform .18s ease, box-shadow .18s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 18px 34px rgb(60 40 20 / 12%); }
+    .num { align-self: flex-start; margin-bottom: 16px; padding: 4px 9px; border-radius: 999px; background: #f3b5e8; color: #2a1a36; font-size: 10px; font-weight: 700; letter-spacing: .04em; }
+    .card strong { font-size: 20px; line-height: 1.25; }
+    .card small { margin-top: 6px; color: #746878; font-size: 12px; line-height: 1.6; }
+    .go { margin-top: auto; padding-top: 18px; color: #2d2340; font-size: 12px; font-weight: 700; }
+    .tag { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10px; font-weight: 700; vertical-align: middle; }
+    .tag--server { background: #f6d9c0; color: #7a4318; }
+    .tag--new { background: #d8ecdc; color: #25603a; }
+    footer { margin-top: 38px; color: #857886; font-size: 12px; line-height: 1.8; }
+    code { padding: 2px 5px; border-radius: 5px; background: #e9e1d5; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">ORIFATE · UI TEST BUILD</div>
+    <h1>东隅穿衣<br />v1.2 前端测试</h1>
+    <p class="lede">六个独立版本，首页设计各不相同，但交互与功能已统一到 V2 标准：色彩分析单一路径（拍照 → 直接看结果 / 补答六题）、体型只走手工尺寸、我的页为「我的穿搭方案 / 穿搭日历 / 色彩分析 / 体型分析」、衣橱导入只留拍照与相册、分析完成后首页入口自动收起。</p>
+    <p class="notice">测试建议：用 Chrome / Edge 打开；每个版本独立存储，切换版本不会互相影响。想做色彩分析：首页入口 → 开始拍照分析 → 上传一张正面照 → 选「直接看初步结果」或「补答六题」。</p>
+    <p class="notice notice--warn">V2 接了 Dify：色彩分析 / 穿搭推荐 / 衣橱识别需要本地 Node 后端（<code>server/</code>），静态托管下只用于预览界面与其余流程；V1、V3、V4、V8、iPhone16 为纯前端规则，全部可离线使用。</p>
+    <section class="grid">
+      <a class="card" href="./v1/">
+        <span class="num">v1</span>
+        <strong>V1 · 恢复版</strong>
+        <small>经典首页 / 幸运色 / 近 7 天记录</small>
+        <span class="go">打开测试 →</span>
+      </a>
+      <a class="card" href="./v2/">
+        <span class="num">v2</span>
+        <strong>V2 · 日历优先<span class="tag tag--server">需后端</span><span class="tag tag--new">含衣橱查重</span></strong>
+        <small>近 7 天日历 + 幸运色卡 + Dify 色彩分析 + 衣橱查重提示</small>
+        <span class="go">打开测试 →</span>
+      </a>
+      <a class="card" href="./v3-weather-girl/">
+        <span class="num">v3 · weather · girl</span>
+        <strong>V3 · Weather Girl</strong>
+        <small>白色天气卡 + 照片条</small>
+        <span class="go">打开测试 →</span>
+      </a>
+      <a class="card" href="./v4-iphone17/">
+        <span class="num">v4 · iphone17</span>
+        <strong>V4 · iPhone 17</strong>
+        <small>透明天气背景 + 无照片条</small>
+        <span class="go">打开测试 →</span>
+      </a>
+      <a class="card" href="./v8-stage/">
+        <span class="num">v8 · stage</span>
+        <strong>V8 · 舞台式今日穿搭</strong>
+        <small>深色舞台色卡 + 探索你的风格入口</small>
+        <span class="go">打开测试 →</span>
+      </a>
+      <a class="card" href="./today-iphone16/">
+        <span class="num">today · iphone16</span>
+        <strong>今日穿搭 · iPhone 16</strong>
+        <small>深色大图 + 城市卡片入口</small>
+        <span class="go">打开测试 →</span>
+      </a>
+    </section>
+    <footer>
+      静态演示包 · 由各版本 <code>dist</code> 构建产物组成 · 除 V2 需本地后端外，均不依赖服务端<br />
+      版本说明和部署方法见 <a href="./README.md">README.md</a>
+    </footer>
+  </main>
+</body>
+</html>
