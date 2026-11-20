@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="158" height="271" viewBox="0 0 158 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 7">
+<rect id="Rectangle 15" x="93" y="2" width="63" height="133" fill="#AD86FB" stroke-width="4" stroke="white"/>
+<rect id="Rectangle 16" x="93" y="131" width="63" height="64" fill="#F8B8F4" stroke-width="4" stroke="white"/>
+<rect id="Rectangle 17" x="93" y="191" width="63" height="64" fill="#FFDCDC" stroke-width="4" stroke="white"/>
+<rect id="Rectangle 18" x="93" y="246" width="63" height="23" fill="#0B0B0D" stroke-width="4" stroke="white"/>
+<mask id="stroke0_0_9" fill="white">
+<path d="M130.356 48.8984C136.174 63.754 114.069 86.3028 80.9814 99.2627C47.894 112.222 16.3544 110.686 10.5357 95.8301C4.71699 80.9746 26.8226 58.4257 59.9101 45.4659C92.9975 32.506 124.537 34.0428 130.356 48.8984Z"/>
+</mask>
+<path id="Ellipse 1" d="M130.356 48.8984C136.174 63.754 114.069 86.3028 80.9814 99.2627C47.894 112.222 16.3544 110.686 10.5357 95.8301C4.71699 80.9746 26.8226 58.4257 59.9101 45.4659C92.9975 32.506 124.537 34.0428 130.356 48.8984Z" stroke-width="4" stroke="white" mask="url(#stroke0_0_9)"/>
+<g id="Star 1">
+<path d="M27 25L30.7813 35.2187L41 39L30.7813 42.7812L27 53L23.2187 42.7812L13 39L23.2187 35.2187L27 25Z" fill="white"/>
+<mask id="stroke1_0_9" fill="white">
+<path d="M27 25L30.7813 35.2187L41 39L30.7813 42.7812L27 53L23.2187 42.7812L13 39L23.2187 35.2187L27 25Z"/>
+</mask>
+<path d="M27 25L30.7813 35.2187L41 39L30.7813 42.7812L27 53L23.2187 42.7812L13 39L23.2187 35.2187L27 25Z" stroke-width="2" stroke="white" mask="url(#stroke1_0_9)"/>
+</g>
+</g>
+</svg>
